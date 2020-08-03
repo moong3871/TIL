@@ -84,7 +84,18 @@ $ git remote add origin { github repo url }
 $ git remote -v
 ```
 
+<<<<<<< HEAD
 - 등록된 원격 저장소를 삭제하려면 아래의 명령어를 참고하세요.
+=======
+### 4. 원격 저장소에서 로컬로 가져오기
+
+github나 gitlab의 repo주소를 복사해둔 뒤,
+
+``` sh
+$ git clone {가져오고자 하는 repo url}
+```
+
+>>>>>>> 212757cb36bf993c2d939222e124592d9aab7657
 
   (git remote -v를 통해 origin과 주소 확인, 아닐 경우 아래의 코드로 origin 삭제)
 
