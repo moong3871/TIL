@@ -1,5 +1,13 @@
 **처음: 따라만들어보고 실제 페이지 분석해보면서 흥미를 잃지 않기**
 
+> Web과 HTML
+
+- W3C - HTML5 / WHATWG - HTML Living Standard
+- HTML: **Hyper Text Markup** Language --> 웹페이지 작성을 위한 (구조를 잡기 위한) 언어
+  - Hyper Text: 한 문서에서 다른 문서로 즉시 이동
+  - Markup: 역할 부여(제목이 제목)
+  - Markup Language: 문자나 데이터의 구조 명시, '표현만'
+
 > HTML 기본 구조
 
 - html 요소: head와 body로 구분
