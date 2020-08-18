@@ -78,7 +78,7 @@ from articles import views
 
 - **프로젝트 이름에 사용 못하는 것**
 
-	1. 하이픈 X
+	1. 하이픈 X (python인 view에도 안돼.)
  	2. python, django에서 쓰는 기본 이름들 X
 
 - **앱 이름 convention**
@@ -181,7 +181,7 @@ templates의 html
 
       id는 중복X, 서버에 파라미터값으로 넘어가지X, **고유한 식별자**
 
-      name은 중복O, action에 해당하는 페이지로 전달하는 파라미터??????????????
+      name은 중복O, action에 해당하는 페이지로 전달하는 파라미터, catch에서 받는다.
 
   - `action`으로 데이터를 보내려면 submit 필수
 
