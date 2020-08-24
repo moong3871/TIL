@@ -20,7 +20,7 @@
 
     - DOM 트리
 
-      부모 다음에 자식이 오면 **2spaces 혹은 4spaces**
+      부모 다음에 자식이 오면 **2spaces 혹은 4spaces** (들여쓰기)
 
 > 요소
 
@@ -60,6 +60,8 @@
 
 :블럭은 다음 요소가 아래에, 인라인은 옆에 올 수 있다.
 
+ex) 블럭-`h1`, 인라인-`span`
+
 > 텍스트 관련 요소
 
 `<a>`: 하이퍼링크 생성
@@ -97,11 +99,23 @@ h1 {
 
 > CSS 정의 방법
 
-- 인라인
+- 인라인: 해당 태그에 직접 `style` 적용
 
-- 내부참조: style 안에 정의
+  - ```html
+    <h1 style="color : blue;">Hi</h1>
+    ```
 
-- 외부참조: css 파일을 따로 만들어서 link 태그로 적용 (기본)
+- 내부참조: head 태그 안에 <style></style> 정의
+
+  - ```html
+    <style>
+    h1 {
+        color:blue;
+    }
+    </style>
+    ```
+
+- 외부참조: css 파일을 따로 만들어서 html에 link 태그로 적용 (기본)
 
   
 
@@ -138,7 +152,7 @@ h1 {
 > CSS 문서 표현
 
 - 배경(background-image)은 컨텐츠와 관련없는 단순 디자인 요소
-  - cf) img: 디자인+컨텐츠
+  - cf) <img>: 디자인+컨텐츠
 
 > **CSS Box model**
 
@@ -148,19 +162,19 @@ h1 {
 
     - ```python
       #값 하나: 상하좌우
-      margin-1{
+      .margin-1{
       	margin: 10px;
       }
       #값 둘: 상하/ 좌우
-      margin-2{
+      .margin-2{
           margin:10px 20px;
       }
       #값 셋: 상/좌우/하
-      margin-3{
+      .margin-3{
           margin:10px 20px 30px;
       }
       #값 넷: 상우하좌(시계방향)
-      margin-2{
+      .margin-2{
           margin:10px 20px 30px 40px;
       }
       ```
@@ -169,8 +183,15 @@ h1 {
 
 > CSS Display
 
+- block 레벨 요소
+  - div / ul, ol, li / p / hr / form
+- 인라인 레벨 요소
+  - span / a / img / input, label / b, em, i, strong
+
 - display inline은 **margin값을 줄 수 없다.** 상하 여백인 line-height로 지정
 - text와 관련된 요소는 inline 요소
+  - margin 값을 줄 수 없다.
+  - text 줄간격: `line-height`
 - block은 너비를 가질 수 없다면 오른쪽을 다 차지
 - inline은 컨텐츠 영역만큼만 차지
 - 정렬은 기본적으로 좌측부터, margin-left하면 왼쪽값을 오른쪽에 옮긴다.
