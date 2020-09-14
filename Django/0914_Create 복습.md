@@ -1,5 +1,29 @@
 # 온라인 코칭 흐름
 
+## web 수업의 목적
+
+WEB? 무언가 만든다
+
+python, javascript, html, css, django, vue 등의 사용법을 익히는게 아니라 
+
+**목표로 하는 걸 스스로 만들어낼 수 있도록**
+
+공식 문서, 구글링을 통해 스스로 문제해결 가능하도록
+
+**전체 흐름을 알고, 내 프로젝트를 위해서 뭐가 필요한지(서버, db, 크롬 익스텐션) 알게 되는 것**
+
+==혼자서 도전해보는 것, 무엇을? 내가 만들 수 있는 것을 직접 만들어보는 것==
+
+ex) 
+
+- 수업자료를 그대로 따라하기
+- 에러 발생 시 무턱대고 검색X, 질문X --> **에러코드, 메세지 읽고 이 녀석을 어떻게 해결할 수 있을까? 반드시 고민!**
+- 검색의 범위 또한 줄어들고, 질문 또한 명확해진다.
+
+---------
+
+
+
 게시판을 가진 웹사이트를 만들거야
 
 - 메인 페이지 = 글 리스트
@@ -15,6 +39,30 @@
   - 유저관리 - users app
 
 ## 1. 가상환경 설정
+
+1. startproject
+
+2. startapp
+
+3. app 등록
+
+4. url (주소 입력시 어떤 페이지를 보여줄건지 결정)
+
+   `path('search/', views.search),` search/라는 주소로 들어오면 view의 search를 보여준다. 즉, path(주소, 어떤 화면을 보여줄 로직)
+
+   `path('articles/', include('articles'),` articles/ 주소 아래에 오는 것들은 articles폴더의 urls.py에 있다. ex) articles/delete
+
+5. view
+
+   5-1. model
+
+   5-2. view
+
+6. template
+
+
+
+.gitignore **왜 venv, vscode, db.sqlite 넣지 말라했는지 생각해보기**
 
 ## 2. 프로젝트와 app
 
